@@ -6,13 +6,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <style media="screen">
-
+      .mapouter{
+        position:relative;
+        text-align:right;
+        height:500px;
+        width:750px;
+      }
+      .gmap_canvas{
+        overflow:hidden;
+        background:none !important;
+        height:500px;
+        width:750px;
+      }
     </style>
 
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm rounded">
       <a class="navbar-brand" href="../index.html">
         <img src="../media/images/logo/logo.png" alt="">
       </a>
@@ -80,8 +91,36 @@
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 my-5 py-5 ml-5 pl-5">
+          <h1>Find Us: </h1>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe width="750" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=atinyprint&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a>
+            </div>
+        </div>
+        </div>
 
+        <div class="col-6 my-5 py-5 ml-n5 pl-n5">
+          <h1>Contact Us: </h1>
+          <div class="form-group">
+            <label for="customerName">Name:</label>
+            <input type="text" class="form-control w-50" id="customerName" name="customerName" value="">
+          </div>
+          <div class="form-group">
+            <label for="customerEmail">Email:</label>
+            <input type="text" class="form-control w-50" id="customerEmail" name="customerEmail" value="">
+          </div>
+          <div class="form-group">
+            <label for="comments">Comments:</label>
+            <textarea class="form-control w-75" id="description" name="description" rows="9" cols="80" style="resize: none"></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary mb-2">Submit</button>
+          <button type="submit" class="btn btn-danger mb-2">Cancel</button>
+        </div>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
