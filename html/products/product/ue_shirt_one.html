@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <style media="screen">
-      .card img{
+      .col-6 img{
 
-        width: 100%;
+        height: 500px;
+        width: 600px;
 
       }
     </style>
@@ -17,8 +18,8 @@
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm rounded">
-      <a class="navbar-brand" href="../../index.html">
-        <img src="../../media/images/logo/logo.png" alt="">
+      <a class="navbar-brand" href="../../../index.html">
+        <img src="../../../media/images/logo/logo.png" alt="">
       </a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,83 +86,40 @@
 
     <div class="container-fluid">
       <div class="row px-2">
-        <div class="col-4 my-5 py-5 text-center border-right">
-          <img src="../../media/images/logo/schools/ue.png" alt="" width="350">
-          <h1 class="py-2">University of the East</h1>
-          <p>School Description Placeholder</p>
+        <div class="col-6 my-5 py-5">
+          <img class="float-right" src="../../../media/images/products/shirts/ue.jpg" alt="">
         </div>
+        <div class="col-6 my-5 py-5 text-left">
+          <img src="../../media/images/logo/schools/ue.png" alt="" width="350">
+          <h1 class="py-2">University of the East T-Shirt</h1>
+          <p>Item Description Placeholder</p>
+          <p>Available in XS, S, M, L, XL, XXL</p>
+          <h3>₱299.00</h3>
 
-        <div class="col-8 my-3 py-3">
-          <h2 class="text-center">Products</h2>
-          <div class="card-deck my-2">
-            <div class="card">
-              <img src="../../media/images/products/shirts/ue.jpg" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Price</p>
-              </div>
-            </div>
+          <label class="col-form-label" for="size">Choose your size:</label>
+          <select class="form-control w-50" id="size">
+            <option>Extra Small</option>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>Extra Large</option>
+            <option>Extra Extra Large</option>
+          </select>
+          <label class="col-form-label" for="quantity">How many would you like?(Limit of 10 per transaction)</label>
+          <select class="form-control w-50" id="quantity">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+          <button type="submit" class="btn btn-primary mt-3 w-50">Add to cart</button>
 
-            <div class="card">
-              <img src="../../media/images/products/shirts/ue.jpg" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Price</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <img src="../../media/images/products/shirts/ue.jpg" alt="">
-              <div class="card-body">
-                <h5 class="card-title"><a href="#">UE T-SHIRT</a></h5>
-                <p class="card-text">P299.00</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <img src="../../media/images/products/shirts/ue.jpg" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Price</p>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="card-deck my-2">
-            <div class="card">
-              <img src="../../media/images/products/shirts/ue.jpg" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Price</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <img src="../../media/images/products/shirts/ue.jpg" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Price</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <img src="../../media/images/products/shirts/ue.jpg" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Price</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <img src="../../media/images/products/shirts/ue.jpg" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Price</p>
-              </div>
-            </div>
-
-          </div>
 
         </div>
       </div>
