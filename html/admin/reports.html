@@ -12,7 +12,7 @@
     </style>
   </head>
 
-  <body>
+  <body data-gr-c-s-loaded="true">
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm rounded">
       <a class="navbar-brand" href="home.html">
         <img src="../../media/images/logo/logo.png" alt="">
@@ -41,6 +41,10 @@
           </li>
         </ul>
 
+        <span class="navbar-text mr-3">
+          <a href="../../index.html">Back to Main Site</a>
+        </span>
+        
         <span class="navbar-text font-weight-bold" style="font-size: 1.625rem; color: black;">
           Admin Dashboard
         </span>
@@ -48,8 +52,46 @@
       </div>
     </nav>
 
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col my-2 text-center">
+          <h1>Sales</h1>
+        </div>
+      </div>
+      <canvas class="my-4 w-100 chartjs-render-monitor" id="myChart" style="display: block; width: 1538px; height: 649px;"></canvas>
+    </div>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script>
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          datasets: [{
+            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+            lineTension: 0,
+            backgroundColor: 'transparent',
+            borderColor: '#007bff',
+            borderWidth: 4,
+            pointBackgroundColor: '#007bff'
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false
+              }
+            }]
+          },
+          legend: {
+            display: false,
+          }
+        }
+      });
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
